@@ -27,7 +27,5 @@ class Prodotto
         int getAnno();
         float getPrezzo();
         int getQuantita();
-		
-		friend ostream& operator<<(ostream& os, const Prodotto& p);
-		friend istream& operator>>(istream& is, Prodotto& p);
+
 };

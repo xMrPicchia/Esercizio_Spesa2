@@ -2,7 +2,8 @@
 
 int main()
 {
-    Carrello c;    
+    Carrello c; 
+	Carrello c1;
     Prodotto* p1=new Prodotto(1,"Pane", "Pane", 2019, 1.50, 10);
     Prodotto* p2=new Prodotto(2,"P2","P2", 2018, 21.50, 20);
     Prodotto* p3=new Prodotto(3,"P3","P3", 2018, 0.50, 10);
@@ -34,8 +35,5 @@ int main()
         cout<<"\nProdotto non presente";
     
     c.elencaProdotti();
-	
-	cout<<"\nStampa Prodotto P1"<<*p1;
-	cin>>*p1;
-	cout<<*p1;
+
 }

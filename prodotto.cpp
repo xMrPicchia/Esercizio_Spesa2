@@ -1,25 +1,5 @@
 #include "prodotto.h"
 
-ostream& operator<<(ostream& os, const Prodotto& p)
-{
-	os<<"\n--- Informazioni Prodotto ---";
-	os<<"\nCod: "<<p.codice;
-	os<<"\nNome: "<<p.titolo;
-	os<<"\nDescrizione"<<p.descrizione;
-	os<<"\nAnno: "<<p.anno;
-	os<<"\nPrezzo: "<<p.prezzo;
-	os<<"\nQuantità in magazzino: "<<p.quantita<<endl;
-	return os;
-}
-
-istream& operator>>(istream& is, Prodotto& p)
-{
-	cout<<"Inserisci cod: ";
-	is>>p.codice;
-	cout<<"Inserisci Nome: ";
-	is>>p.titolo;
-	return is;
-}
 
 Prodotto::Prodotto(int codice, string titolo, string descrizione, int anno, float prezzo, int quantita)
 {
